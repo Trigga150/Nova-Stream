@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NOVAstream — Upload</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-logo pulse"></div>
+      <a href="index.html" class="brand-title">NOVAstream</a>
+    </div>
+    <nav class="actions">
+      <a href="index.html" class="btn-glow">Home</a>
+    </nav>
+  </header>
+
+  <main class="upload-layout">
+    <section class="upload-form glass">
+      <h2>Upload Your Video</h2>
+      <form id="uploadForm">
+        <label>
+          Video File
+          <input type="file" id="videoFile" accept="video/*" required />
+        </label>
+
+        <label>
+          Thumbnail
+          <input type="file" id="thumbFile" accept="image/*" />
+        </label>
+
+        <label>
+          Title
+          <input type="text" id="videoTitle" placeholder="Enter video title" required />
+        </label>
+
+        <label>
+          Description
+          <textarea id="videoDescription" placeholder="Describe your video…" rows="4"></textarea>
+        </label>
+
+        <button type="submit" class="btn-primary">Upload</button>
+      </form>
+    </section>
+
+    <section class="preview glass">
+      <h3>Preview</h3>
+      <video id="previewVideo" controls></video>
+      <img id="previewThumb" alt="Thumbnail preview" />
+      <div class="preview-meta">
+        <h4 id="previewTitle"></h4>
+        <p id="previewDesc"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-left">© 2026 NOVAstream</div>
+  </footer>
+
+  <script src="scripts/upload.js"></script>
+</body>
+</html>
