@@ -15,7 +15,7 @@ const videos = [
     description: "A midnight drive through vapor skies.",
     duration: "4:08",
     views: "894K",
-    thumb: "assets/images/thumb2.jpg",
+    thumb: "assets/images/citywave.jpg",
     src: "assets/videos/sample.mp4"
   },
   {
