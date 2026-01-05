@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NOVAstream — Profile</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-logo pulse"></div>
+      <a href="index.html" class="brand-title">NOVAstream</a>
+    </div>
+    <nav class="actions">
+      <a href="upload.html" class="btn-glow">Upload</a>
+    </nav>
+  </header>
+
+  <main class="profile-layout">
+    <!-- Profile Card -->
+    <section class="profile-card glass">
+      <div class="avatar">
+        <img src="assets/images/avatar.png" alt="User avatar" />
+      </div>
+      <div class="profile-info">
+        <h2 id="profileName">John Doe</h2>
+        <p id="profileBio">Exploring neon skylines and futuristic vibes.</p>
+        <button class="btn-primary" onclick="editProfile()">Edit Profile</button>
+      </div>
+      <div class="profile-stats">
+        <div class="stat">
+          <span class="stat-number">12</span>
+          <span class="stat-label">Videos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">4.5K</span>
+          <span class="stat-label">Followers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">23K</span>
+          <span class="stat-label">Views</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Uploaded Videos -->
+    <section class="section-title">
+      <h3>My Uploads</h3>
+      <div class="accent-line"></div>
+    </section>
+    <section id="myVideos" class="grid">
+      <!-- User’s uploaded videos will render here -->
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-left">© 2026 NOVAstream</div>
+  </footer>
+
+  <script src="scripts/profile.js"></script>
+</body>
+</html>
