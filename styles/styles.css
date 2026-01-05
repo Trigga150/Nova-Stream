@@ -159,4 +159,45 @@ body.theme-dark {
   .hero { grid-template-columns: 1fr; }
   .player-layout { grid-template-columns: 1fr; }
 }
+.upload-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.upload-form.glass, .preview.glass {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.upload-form h2, .preview h3 { margin-top: 0; }
+
+.upload-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.upload-form input, .upload-form textarea {
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+}
+
+.preview video, .preview img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.preview-meta { margin-top: 1rem; }
+
  
