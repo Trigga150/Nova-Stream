@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NOVAstream — Player</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-logo pulse"></div>
+      <a href="index.html" class="brand-title">NOVAstream</a>
+    </div>
+
+    <div class="searchbar">
+      <input id="searchInput" type="text" placeholder="Search the stream…" aria-label="Search videos" />
+      <button id="searchBtn" class="btn-glow">Search</button>
+    </div>
+
+    <nav class="actions">
+      <button class="icon-btn" aria-label="Back" onclick="history.back()">←</button>
+    </nav>
+  </header>
+
+  <main class="player-layout">
+    <section class="player-container glass">
+      <video id="videoElement" class="player" preload="metadata">
+        <source src="assets/videos/sample.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+
+      <div class="controls">
+        <button id="playPause" class="control-btn">►</button>
+        <input id="seekBar" type="range" min="0" max="100" value="0" />
+        <span id="timeDisplay">00:00 / 00:00</span>
+        <input id="volumeBar" type="range" min="0" max="1" step="0.05" value="0.9" />
+        <button id="fullscreenBtn" class="control-btn">⤢</button>
+      </div>
+
+      <div class="video-meta">
+        <h2 id="videoTitle">Loading…</h2>
+        <p id="videoDescription">Exploring neon skylines and kinetic nights.</p>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <h4>Up next</h4>
+      <div id="upNext" class="list"></div>
+    </aside>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-left">© 2026 NOVAstream</div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
