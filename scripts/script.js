@@ -35,6 +35,15 @@ const videos = [
     views: "512K",
     thumb: "assets/images/thumb4.jpg",
     src: "assets/videos/sample.mp4"
+  },
+  {
+    id: 5,
+    title: "Maniacal Trigga - Intombi official video",
+    description: "Maniacal Trigga shows off with his beatiful girlfriend through music video. love journey",
+    duration: "6:12",
+    views: "1.2M",
+    thumb: "assets/images/thumb5.jpg",
+    src: "assets/videos/intombi.mp4"
   }
 ];
 
