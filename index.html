@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NOVAstream — Watch the Future</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-logo pulse"></div>
+      <h1 class="brand-title">NOVAstream</h1>
+    </div>
+
+    <div class="searchbar">
+      <input id="searchInput" type="text" placeholder="Search the stream…" aria-label="Search videos" />
+      <button id="searchBtn" class="btn-glow">Search</button>
+    </div>
+
+    <nav class="actions">
+      <button class="icon-btn" aria-label="Upload">
+        ⬆
+      </button>
+      <button class="icon-btn" aria-label="Profile">
+        ☉
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content glass">
+        <h2>Featured: City at Lightspeed</h2>
+        <p>Skyscrapers breathe neon. The night hums. Step into tomorrow.</p>
+        <a href="video.html?id=1" class="btn-primary">Watch now</a>
+      </div>
+      <div class="hero-media">
+        <img src="assets/images/featured-thumb.jpg" alt="Featured futuristic city" />
+      </div>
+    </section>
+
+    <section class="section-title">
+      <h3>Trending</h3>
+      <div class="accent-line"></div>
+    </section>
+
+    <section id="videoGrid" class="grid">
+      <!-- Cards are rendered by script.js -->
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-left">© 2026 NOVAstream</div>
+    <div class="footer-right">Built for speed • Designed for tomorrow</div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
